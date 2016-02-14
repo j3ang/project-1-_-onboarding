@@ -47,97 +47,116 @@ table {
 	border-spacing: 0;
 }
 
-@media screen and (min-width: 500px){
-	html{
+html{
+	font-family: 'Nobile',Helvetica,arial, sans-serif;
+}
 
-	}
+input{
+	font-family: sans-serif;
+}
+
+header{
+	height: 1.5em;
+	background: url(images/header.png);
+	background-size: cover;
+
+}
+footer{
+	height: 1.5em;
+	background: url(images/footer.png);
+	background-size: cover;
+	position: relative;
+	clear: both;
+}
+
+
+#info_container{
+	padding-left: 1em;
+	width: 75%;
+	height: auto;
+	margin-left: 11%;
+	padding-bottom: 3em;
+	background-image:url(images/body_background.png);
+	background-size: cover;
+	line-height: 2em;
+
+
+-webkit-box-shadow: 0px 0px 10px 3px gray;
+-moz-box-shadow: 0px 0px 10px 3px gray;
+box-shadow: 0px 0px 10px 3px gray;
 }
 
 h2{
 	font-size: 3em;
+	padding-top: 1em;
+	margin-bottom: 5%;
+	margin-left: 2%;
+	
 }
 
 h3{
-	font-size: 1.3em;
+	font-size: 1.2em;
+	
+}
+
+h6{
+	font-size: 0.8em;
+}
+
+.left input{
+	width: 90%;
+	height: 2em;
+	border-radius:3px;
+	border: none;
+	border:solid black 1.5px;
+	font-size: 18px;
+}
+
+
+
+
+@media (min-width: 880px){
+h3{
+	font-size: 1.5em;
+	
 }
 
 h6{
 	font-size: 0.9em;
 }
-body{
-    max-width: 980px;
-    margin: 0px auto 0px auto;
-    padding-top: 5%;
-    padding-bottom: 10%;
-    position: relative;
-    background-color: transparent;
-    box-shadow: 0px 0px 20px 1px gray;
-    overflow: hidden;
-    background-image: url(images/bg2.jpg);
-  	position: relative;
-  	line-height: 2;
-}
 
-
-label{
-	display: inline-block;
+.left{
+	width: auto;
+	height: auto;
+	display: block;
 	float: left;
-	clear: left;
-	text-align: right;
+	margin-left: 3%;
 }
 
-#fname,#lname{
-	background-image: url(images/icon/name.png) ;
-	background-repeat: no-repeat;
-	background-size:15px 15px;
+.right{
+	display: block;
+	margin-top: 2em;
+	overflow: hidden;
+	margin-left: 50%;
 }
-
-#email{
-	background-image: url(images/icon/email.png) ;
-	background-repeat: no-repeat;
-	background-size:15px 11px;
-	background-position: 2.5px ;
 
 }
 
-#tel{
-	background-image: url(images/icon/phone.png) ;
-	background-repeat: no-repeat;
-	background-size:14px 14px;
-	background-position: 2.5px ;
-}
-#fname,#lname,#email,#tel{
-	padding-left: 20px;
-	width: 18em;
+textarea{
+	width: 90%;
+	font-size: 16px;
 }
 
-#info_container{
-	width: 350px;
- 	box-shadow: 0px 0px 20px 1px gray;
- 	border-radius: 10px;
- 	background-color: rgba(204,203,204,0.5);
- 	padding-bottom: 3%;
- }
-
- @media (max-width: 350px){
- 		#info_container{
-	width: 250px;
- 	}
-
- 	form textarea{
-width: 17.5em;
- 	}
- }
-
-@media (min-width: 350px){
-
-
- 	form textarea{
-width: 25em;	
+input[type=submit].btn {
+	background-color: #3399ff;
+	border:none;
+	border-radius: 3px;
+	color: white;
+	font-size:1.1em;
+	padding: 10px;
+	margin-top: 4%;
+	display: block;
+-webkit-appearance: none;
 }
 
- .btn{
- 	width: 15em;
- 	height: 4em;
- }
 

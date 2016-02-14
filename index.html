@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="screen.css">
+	<link href='https://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="">
 	<script>
 function validateForm() {
     var x = document.forms["rsvp_form"]["Firstname"].value;
@@ -15,20 +17,27 @@ function validateForm() {
 	</script>
 
 	<title>RSVP</title>
+	<header></header>
 </head>
-	
- <body>
- 	<div align="center" class="content">
+<body>
  	<div id="info_container">
   	<h2>RSVP</h2>
   	<form name="rsvp_form" action="test.asp" onsubmit="return validateForm()" method="post">
+  	<div class="left">
   		<h3>Your contact information:</h3>
-  		<input id="fname" type="text" name="Firstname" placeholder="Firstname" required>
-  		<input id="lname" type="text" name="Lastname" placeholder="Lastname" required>
-  		<input id="email" type="email" placeholder="Email" >
-  		<input id="tel" type="tel" name="Telephone" placeholder="Telephone" required>
+  	
+  		<h4>First name</h4>
+  		<input id="fname" type="text" name="Firstname" placeholder="example" required>
+  		<h4>Last name</h4>
+  		<input id="lname" type="text" name="Lastname" placeholder="example" required>
+  		<h4>Email</h4>
+  		<input id="email" type="email" placeholder="email@example.com" >
+  		<h4>Telephone</h4>
+  		<input id="tel" type="tel" name="Telephone" placeholder="(123) 456 7890" required>
+  		
   		<h6>Your information will only be visible to us.</h6>  
-
+	</div>
+	<div class="right">
   		<h3>Will you be attending?</h3>	
   		<ul>
   		<li><input  type="radio" name="attend" value="Yes" checked> Yes, I will attend.</li>
@@ -50,12 +59,14 @@ function validateForm() {
 						</select>​
 				
 				<h3>Message to Meina & Michael: </h3>
-				<textarea class="message" placeholder="Type in here" maxlength="60" cols="60" rows="8"></textarea>
+				<textarea class="message" placeholder="Any suggestion for songs? etc." maxlength="60" cols="60" rows="8"></textarea>
+	
 
-  		<input class="btn" type="submit" onclick="formSubmit()" value="Submit">
+  		<input class="btn" type="submit" onclick="formSubmit()" value="RSVP for Meina&Mike's wedding">
+  	</div>
   	</div>
   	</form>
-  	</div>
+  	<footer></footer>
 </body>
 </html>
 
