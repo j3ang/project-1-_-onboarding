@@ -71,95 +71,88 @@ footer{
 
 
 #info_container{
-	padding-left: 1em;
+	padding-left: 3%;
 	width: 75%;
 	height: auto;
 	margin-left: 11%;
-	padding-bottom: 3em;
+	padding-bottom: 5%;
 	background-image:url(images/body_background.png);
 	background-size: cover;
-	line-height: 2em;
-
-
--webkit-box-shadow: 0px 0px 10px 3px gray;
--moz-box-shadow: 0px 0px 10px 3px gray;
-box-shadow: 0px 0px 10px 3px gray;
+	line-height: 200%;
+	-webkit-box-shadow: 0px 0px 10px 3px gray;
+	-moz-box-shadow: 0px 0px 10px 3px gray;
+	box-shadow: 0px 0px 10px 3px gray;
 }
 
 h2{
-	font-size: 3em;
-	padding-top: 1em;
+	font-size: 300%;
+	padding-top: 10%;
 	margin-bottom: 5%;
 	margin-left: 2%;
-	
 }
 
 h3{
-	font-size: 1.2em;
-	
+	font-size: 120%;
 }
 
 h6{
-	font-size: 0.8em;
+	font-size: 70%;
 }
 
 .left input{
 	width: 90%;
-	height: 2em;
+	height: 200%;
 	border-radius:3px;
 	border: none;
 	border:solid black 1.5px;
-	font-size: 18px;
-}
-
-
-
-
-@media (min-width: 880px){
-h3{
-	font-size: 1.5em;
-	
-}
-
-h6{
-	font-size: 0.9em;
-}
-
-.left{
-	width: auto;
-	height: auto;
-	display: block;
-	float: left;
-	margin-left: 3%;
-}
-
-.right{
-	display: block;
-	margin-top: 2em;
-	overflow: hidden;
-	margin-left: 50%;
-}
-
+	font-size: 120%;
+	padding:2%;
 }
 
 textarea{
 	width: 90%;
-	font-size: 1.5em;
+	font-size: 100%;
 
 }
 
 input[type=submit].btn {
 	background-color: #3399ff;
 	border:none;
-	border-radius: 3px;
+	border-radius: 4px;
 	color: white;
-	font-size:1.1em;
-	padding: 10px;
+	font-size:110%;
+	padding: 1%;
 	margin-top: 4%;
 	display: block;
 	width: 90%;
 	height: auto;
--webkit-appearance: none;
+	-webkit-appearance: none;
 }
+
+@media (min-width: 880px){
+	h3{
+		font-size: 150%;
+	}
+	h6{
+		font-size: 80%;
+	}
+	.left{
+		width: auto;
+		height: auto;
+		display: block;
+		float: left;
+		margin-left: 3%;
+	}
+	.right{
+		display: block;
+		overflow: hidden;
+		margin-left: 50%;
+	}
+	textarea{
+		width: 90%;
+		font-size: 150%;
+	}
+}
+
 
 
