@@ -67,6 +67,7 @@ footer{
 	background-size: cover;
 	position: relative;
 	clear: both;
+	margin-top: 30%;
 }
 
 
@@ -124,7 +125,7 @@ input[type=submit].btn {
 	padding: 1%;
 	margin-top: 4%;
 	display: block;
-	width: 90%;
+	width: 95%;
 	height: auto;
 	-webkit-appearance: none;
 }
@@ -152,6 +153,9 @@ input[type=submit].btn {
 		width: 90%;
 		font-size: 150%;
 	}
+	
+	footer{
+	margin-top: 10%;
 }
 
 
