@@ -5,16 +5,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
       <link rel="stylesheet" type="text/css" href="screen.css">
       <link href='https://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" type="text/css" href="">
       <script>
          function validateForm() {
-             var x = document.forms["rsvp_form"]["Firstname"].value;
-             if (x == null || x == "") {
-                 alert("Name must be filled out");
-                 return false;
+            
+            var Telephone = document.rsvp_form.Telephone.value;
+             
+             if (isNaN(Telephone)) {
+                     document.getElementById("numloc").innerHTML="Enter Numeric value only";
+                     return false;
+                  }
+                  else{
+                     return true;
+                  }
              }
-         }
-         	
       </script>
       <title>RSVP</title>
       <header></header>
@@ -22,7 +25,7 @@
    <body>
       <div id="info_container">
          <h2>RSVP</h2>
-         <form name="rsvp_form" action="test.php" onsubmit="return validateForm()" method="post">
+         <form name="rsvp_form"  onsubmit="return validateForm()" >
             <div class="left">
                <h3>Your contact information:</h3>
                <h4>First name</h4>
@@ -32,7 +35,7 @@
                <h4>Email</h4>
                <input id="email" type="email" placeholder="you@example.com" >
                <h4>Telephone</h4>
-               <input id="tel" type="tel" name="Telephone" placeholder="(123) 456 7890" required>
+               <input id="tel" type="tel" name="Telephone" placeholder="(123) 456 7890" required><span id="numloc"></span>
                <h6>Your information will only be visible to us.</h6>
             </div>
             <div class="right">
@@ -57,7 +60,8 @@
                </select>
                <h3>Message to Meina & Michael: </h3>
                <textarea class="message" placeholder="Any suggestion for songs? etc." rows="8"></textarea>
-               <input class="btn" type="submit" onclick="formSubmit()" value="RSVP for Meina&Mike's wedding">
+               <span id="thanks"></span>
+               <input class="btn" id="btn" type="submit" value="RSVP for Meina&Mike's wedding">
             </div>
       </div>
       </form>

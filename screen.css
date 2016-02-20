@@ -113,7 +113,6 @@ h6{
 textarea{
 	width: 90%;
 	font-size: 100%;
-
 }
 
 input[type=submit].btn {
@@ -128,6 +127,12 @@ input[type=submit].btn {
 	width: 95%;
 	height: auto;
 	-webkit-appearance: none;
+}
+
+span{
+	display: block;
+	color: #e74c3c;
+	font-size:80%;
 }
 
 @media (min-width: 880px){
@@ -151,12 +156,9 @@ input[type=submit].btn {
 	}
 	textarea{
 		width: 90%;
-		font-size: 150%;
+		font-size: 100%;
 	}
 	
 	footer{
 	margin-top: 10%;
 }
-
-
-
